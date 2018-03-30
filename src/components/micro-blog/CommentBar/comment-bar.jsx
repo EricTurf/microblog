@@ -5,9 +5,15 @@ import moment from "moment";
 export default class CommentBar extends React.Component {
   constructor() {
     super();
-    this.state = { likes: Math.floor(Math.random() * 30) };
+    this.state = { likes: Math.floor(Math.random() * 30), liked: false };
   }
-  handleLike = () => this.setState({ likes: this.state.likes + 1 });
+  handleLike = () =>
+    this.setState(
+      {
+        likes: this.state.liked ? this.state.likes - 1 : this.state.likes + 1
+      },
+      this.setState({ liked: !this.state.liked })
+    );
 
   render() {
     return (
@@ -36,7 +42,7 @@ border-bottom:solid 1px grey;
 `;
 const CommentLikeContainer = styled.div`
 position:absolute;
-right:30px;
+right:430px;
 display:flex
 justify-content:space-between;
 `;

@@ -4,6 +4,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import MicroBlog from "./components/micro-blog/micro-blog";
 import Nav from "./components/nav/nav";
+import DashBoard from "./components/dashboard/dashboard";
 
 const Main = styled.div`
   display: flex;
@@ -14,6 +15,7 @@ class App extends Component {
       <Main>
         <Nav />
         <MicroBlog />
+        <DashBoard />
       </Main>
     );
   }

@@ -10,6 +10,8 @@ padding-top:20px`;
 
 const Main = styled.div`
   padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 `;
 
 export default class Post extends React.Component {

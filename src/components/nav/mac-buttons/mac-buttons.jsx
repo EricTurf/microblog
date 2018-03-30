@@ -15,7 +15,7 @@ const Button = styled.div`
   height: 0.75rem;
 `;
 
-const buttonColors = ["red", "yellow", "green"];
+const buttonColors = ["rgb(255,83,79)", "rgb(255,188,1)", "rgb(0,207,29)"];
 class MacButton extends Component {
   render() {
     return (

@@ -16,11 +16,10 @@ const Date = styled.h2`
 
 const MagnifyingGlass = styled.div`
   font-size: 2em;
-  right: 150px;
-  display: inline-block;
+  right: 400px;
   width: 0.5em;
   height: 0.5em;
-  border: 0.05em solid #030856;
+  border: 0.07em solid #030856;
   position: absolute;
   border-radius: 0.35em;
   &::before {
@@ -29,10 +28,10 @@ const MagnifyingGlass = styled.div`
     position: absolute;
     right: -0.25em;
     bottom: -0.1em;
-    border-width: 0;
+    border-width: ;
     background: #030856;
     width: 0.35em;
-    height: 0.05em;
+    height: 0.07em;
     transform: rotate(45deg);
   }
   &:hover {
