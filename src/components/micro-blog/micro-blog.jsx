@@ -3,7 +3,9 @@ import PostList from "./post-list/post-list";
 import SearchBar from "./search-bar/search-bar";
 import styled from "styled-components";
 
-const Main = styled.div``;
+const Main = styled.div`
+  position: relative;
+`;
 class MicroBlog extends Component {
   render() {
     return (

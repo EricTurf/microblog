@@ -5,8 +5,9 @@ import User from "../User/user";
 import CommentBar from "../CommentBar/comment-bar";
 
 const PostText = styled.p`
-color:grey
-padding-top:20px`;
+  color: #979ba7;
+  padding-top: 20px;
+`;
 
 const Main = styled.div`
   padding-top: 100px;

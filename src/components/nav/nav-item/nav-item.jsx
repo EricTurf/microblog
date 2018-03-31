@@ -21,8 +21,9 @@ const Item = styled.div`
   }
 `;
 
-const ItemText = styled.h2`
+const ItemText = styled.h4`
   padding-left: 2.5rem;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: white;
 `;

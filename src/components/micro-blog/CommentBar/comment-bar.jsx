@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import moment from "moment";
+const date = new Date();
 
 export default class CommentBar extends React.Component {
   constructor() {
@@ -18,11 +18,11 @@ export default class CommentBar extends React.Component {
   render() {
     return (
       <CommentBarMain>
-        <Date>{`${moment()
-          .month(Math.floor(Math.random() * 11))
-          .format("MMM")}, ${moment()
-          .date(Math.floor(Math.random() * 30))
-          .format("d")}`}</Date>
+        <DateComment>{`${date.toLocaleDateString("en-EN", {
+          month: "long"
+        })}, ${date.toLocaleDateString("en-EN", {
+          day: "numeric"
+        })}`}</DateComment>
         <CommentLikeContainer>
           <Likes onClick={this.handleLike}>{`${this.state.likes} Likes`}</Likes>
           <Line>
@@ -35,31 +35,39 @@ export default class CommentBar extends React.Component {
   }
 }
 
-const Date = styled.p``;
+const DateComment = styled.p`
+  color: #a1a5b0;
+  font-family: "PT Sans", sans-serif;
+`;
 const CommentBarMain = styled.div`
 display:flex
-border-bottom:solid 1px grey;
+position:relative;
+border-bottom:solid 1px #e3e3e3;
+
 `;
 const CommentLikeContainer = styled.div`
 position:absolute;
-right:430px;
+right:10px;
 display:flex
 justify-content:space-between;
 `;
 
 const Comments = styled.p`
   padding-left: 15px;
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
+  color: #1f2e59;
 `;
 
 const Likes = styled.p`
   cursor: pointer;
-  color: blue;
+  color: #215af1;
+  font-family: "PT Sans", sans-serif;
   padding-right: 25px;
 `;
 
 const Separator = styled.line`
-  stroke: grey;
+  stroke: #e3e3e3;
   stroke-width: 2;
 `;
 

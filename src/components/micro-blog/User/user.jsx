@@ -23,6 +23,8 @@ const UserMain = styled.div`
 `;
 const UserName = styled.p`
 padding-left:40px
+font-family: 'PT Sans', sans-serif;
+color:#1f2e59;
 font-size:20px;
 padding-top:10px;
 `;

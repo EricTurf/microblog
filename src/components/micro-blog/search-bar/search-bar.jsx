@@ -5,18 +5,20 @@ import moment from "moment";
 const Main = styled.div`
   display: flex;
   height: 120px;
-  background-color: rgba(194, 238, 251, 0.15);
+  background-color: rgb(245, 250, 255);
   align-items: center;
   justify-content: flex-start;
 `;
 
 const Date = styled.h2`
   padding-left: 100px;
+  color: #1f2e59;
+  font-family: "PT Sans", sans-serif;
 `;
 
 const MagnifyingGlass = styled.div`
   font-size: 2em;
-  right: 400px;
+  right: 80px;
   width: 0.5em;
   height: 0.5em;
   border: 0.07em solid #030856;
@@ -28,7 +30,7 @@ const MagnifyingGlass = styled.div`
     position: absolute;
     right: -0.25em;
     bottom: -0.1em;
-    border-width: ;
+    border-width: 0;
     background: #030856;
     width: 0.35em;
     height: 0.07em;
